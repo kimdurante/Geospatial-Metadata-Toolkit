@@ -1,0 +1,58 @@
+<gfc:FC_FeatureCatalogue xmlns:gfc="http://www.isotc211.org/2005/gfc"
+    xmlns="http://www.isotc211.org/2005/gfc"
+    xmlns:gco="http://www.isotc211.org/2005/gco"
+    xmlns:gmd="http://www.isotc211.org/2005/gmd"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:gmx="http://www.isotc211.org/2005/gmx"
+    xmlns:gsr="http://www.isotc211.org/2005/gsr"
+    xmlns:gss="http://www.isotc211.org/2005/gss"
+    xmlns:gts="http://www.isotc211.org/2005/gts"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:geonet="http://www.fao.org/geonetwork"
+    xsi:schemaLocation="http://www.isotc211.org/2005/gfc http://www.isotc211.org/2005/gfc/gfc.xsd"
+    uuid="uuid">
+    <gmx:name>
+        <gco:CharacterString>ENTITY AND ATTRIBUTE INFORMATION</gco:CharacterString>
+    </gmx:name>
+    <gmx:scope gco:nilReason="unknown"/>
+    <gmx:versionNumber gco:nilReason="unknown"/>
+    <gmx:versionDate>
+        <gco:Date>2001-01-01</gco:Date>
+    </gmx:versionDate>
+    <gmx:language>
+        <gco:CharacterString>eng; US</gco:CharacterString>
+    </gmx:language>
+    <gmx:characterSet>
+        <gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode"
+            codeListValue="utf8"
+            codeSpace="004"/>
+    </gmx:characterSet>
+    <gfc:producer/>
+    <gfc:functionalLanguage>
+        <gco:CharacterString>eng</gco:CharacterString>
+    </gfc:functionalLanguage>
+    <gfc:featureType>
+        <gfc:FC_FeatureType>
+            <gfc:typeName>
+                <gco:LocalName>entity</gco:LocalName>
+            </gfc:typeName>
+            <gfc:isAbstract>
+                <gco:Boolean>false</gco:Boolean>
+            </gfc:isAbstract>
+            <gfc:featureCatalogue uuidref="uuid"/>
+            <gfc:carrierOfCharacteristics>
+                <gfc:FC_FeatureAttribute>
+                    <gfc:memberName>
+                        <gco:LocalName>ATTR_LABEL</gco:LocalName>
+                    </gfc:memberName>
+                    <gfc:definition>
+                        <gco:CharacterString>ATTR_DEF</gco:CharacterString>
+                    </gfc:definition>
+                    <gfc:cardinality gco:nilReason="unknown"/>
+                </gfc:FC_FeatureAttribute>
+            </gfc:carrierOfCharacteristics>
+            <gfc:carrierOfCharacteristics/>
+        </gfc:FC_FeatureType>
+    </gfc:featureType>
+</gfc:FC_FeatureCatalogue>
