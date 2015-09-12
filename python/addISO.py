@@ -41,7 +41,7 @@ for dirName, subDirs, fileNames in os.walk('.'):
                    distName.text = filename
                    credit.text = 'LeadDog Consulting. (2010). ' + title.text + 'LeadDog Consulting. Available at: http//purl.stanford.edu/' + druid + '.'
                    print metadataID.text
- #               tree.write(file)
+                tree.write(file)
             
                     
                 
