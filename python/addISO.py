@@ -1,4 +1,5 @@
 #This script will read through a csv of filenames and identifiers and write values into ISO XML
+#A .csv file containing filenames and identifiers (identifiers.csv.) must be supplied 
 import csv
 import os
 import xml.etree.ElementTree as ET
