@@ -1,12 +1,12 @@
 # geoMetadata
 XML stylesheets, XSLTs, and Python scripts, for working with geospatial metadata in ISO 19139 and 19110 formats.
 
-XSLT
+### XSLT
 
 addISO.xsl
 
-Python
+### Python
 
-XML Templates
+### XML Templates
 
 
