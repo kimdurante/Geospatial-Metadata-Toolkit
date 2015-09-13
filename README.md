@@ -9,6 +9,10 @@ This stylesheet adds metadata that have been normalized with institutional and c
 
 ### Python
 
+addISO.py
+
+This script adds identifiers to ISO 19139 metadata records, including metadata file identifier, citation URL, and distribution URL. A UUID for feature catalogs can also be added, if applicable.
+
 ### XML Templates
 
 
