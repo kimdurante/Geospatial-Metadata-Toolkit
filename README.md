@@ -5,6 +5,8 @@ XML stylesheets, XSLTs, and Python scripts, for working with geospatial metadata
 
 addISO.xsl
 
+This stylesheet adds metadata that have been normalized with institutional and collection level-metadata. The example provided in the variables is from the National Atlas of the United States.
+
 ### Python
 
 ### XML Templates
