@@ -6,4 +6,4 @@ modifyISO.xsl - This stylesheet can be used to standardize metadata fields for i
  
 Python
 addISO.py - This script can be used to add identifiers in an ISO 19139 record.
-addFC.py -  This script can be used to create attribute labels and definitions for an ISO 19110 record.
+addFC.py -  This script can be used to create attribute labels and definitions for an ISO 19110 record
