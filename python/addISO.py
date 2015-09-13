@@ -25,7 +25,6 @@ for dirName, subDirs, fileNames in os.walk('.'):
             ET.register_namespace('gmi', 'http://www.isotc211.org/2005/gmi')
             ET.register_namespace('gml', 'http://www.opengis.net/gml')
             title = root.find('gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:title/gco:CharacterString', namespaces=namespaces)
-            credit = root.find('gmd:identificationInfo/gmd:MD_DataIdentification/gmd:credit/gco:CharacterString', namespaces=namespaces)
             metadataID = root.find('gmd:fileIdentifier/gco:CharacterString', namespaces=namespaces)
             URL = root.find('gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:identifier/gmd:MD_Identifier/gmd:code/gco:CharacterString', namespaces=namespaces)
             distName = root.find('gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:name/gco:CharacterString', namespaces=namespaces)
@@ -39,7 +38,6 @@ for dirName, subDirs, fileNames in os.walk('.'):
                    URL.text = 'http//purl.stanford.edu/' + druid
                    distURL.text = 'http//purl.stanford.edu/' + druid
                    distName.text = filename
-                   credit.text = 'LeadDog Consulting. (2010). ' + title.text + 'LeadDog Consulting. Available at: http//purl.stanford.edu/' + druid + '.'
                    print metadataID.text
                 tree.write(file)
             
