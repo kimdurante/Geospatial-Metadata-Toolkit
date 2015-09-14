@@ -15,7 +15,12 @@ This script adds identifiers to ISO 19139 metadata records, including metadata f
 
 ### XML Templates
 
-SUL_Template.xml 
+SUL_template.xml 
+
 This is an ISO 19139 template for Stanford University. This template can be used for creating new metadata records.
+
+FC_template.xml
+
+This is a very basic template for collecting ISO 19110 metadata for the description of feature catalogs. Each attribute must have a name (LABEL) and a definition element. If attribute definitions/codelists are provided in a .csv file, see addIdentifiers.py to automate creating of these metadata using this template.
 
 
