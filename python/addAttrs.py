@@ -7,7 +7,7 @@ with open('attributes.csv', 'rU') as IDs:
     reader = csv.DictReader(IDs)
     attributes = {(line['label']): line['definition'] for line in reader }     
 
-tree = ET.parse('fc2.xml')
+tree = ET.parse('FC_template.xml')
 root = tree.getroot()
 ET.register_namespace('xsi', 'http://www.w3.org/2001/XMLSchema-instance')
 ET.register_namespace('gmd', 'http://www.isotc211.org/2005/gmd')
@@ -32,6 +32,6 @@ for k,v in attributes.items():
     locName.text = k
     definition.text = v
     print definition.text
-    tree.write('fc2.xml')
+    tree.write('FC_template.xml')
     
                 
