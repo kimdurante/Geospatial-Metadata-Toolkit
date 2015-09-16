@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- this stylesheet will normalize existing metadata to conform to ISO standards. Use set variables to apply collection-level metadata to indiviudual ISO 19139 records. 
+This docuemnt uses the 'contact.xml' docuemnt to add Responsible party information. -->
 <xsl:stylesheet version="2.0" 
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:gco="http://www.isotc211.org/2005/gco" 
