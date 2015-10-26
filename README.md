@@ -27,7 +27,7 @@ FC_template.xml
 
 This is a very basic template for collecting ISO 19110 metadata for the description of feature catalogs. Each attribute must have a name (LABEL) and a definition element. If attribute definitions/codelists are provided in a .csv file, see addAttrs.py to automate creating of these metadata using this template.
 
-### Required and Recommended Fields
+### ISO and GeoBlacklight Metadata Elements
 
 | ISO Element       | GeoBlacklight  | Entry Method  |
 | ------------- |:-------------:| -----:|
