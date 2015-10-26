@@ -41,8 +41,17 @@ This is a very basic template for collecting ISO 19110 metadata for the descript
 | Temporal extent | dc_temporal_sm/solr_year_i | Date(s) w3cdtf |
 | Access/Use Constraints | dc_rights_s | ISO Codelist |
 | Distributor | dct_provenance_s | Contact template |
-| Metadata contact |  | Contact template |
 | Metadata date stamp | layer_modified_dt | Date w3cdtf |
 | Distribution format | dc_format_s | Controlled vocabulary (local) |
+| Language | dc_language_sm | ISO Codelist |
+| Aggregate Dataset Name |dc_isPartOf_sm  | Free text |
+| Hierarchy level | dc_type_s | ISO Codelist |
+| Geographic extent | georss_box_s | W,E,N,S decimal degrees |
+| Hierarchy level | dc_type_s | ISO Codelist |
+| Hierarchy level | dc_type_s | ISO Codelist |
+| Metadata file identifier | dct_references | Text (uuid or namespace authority + identifier |
+| Spatial reference |  | EPSG Code |
+| Metadata contact |  | Contact template |
+
 
 
