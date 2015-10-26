@@ -20,7 +20,7 @@ pubdate = '2007'
 
 for dirName, subDirs, fileNames in os.walk('.'):
     for f in fileNames:
-        if f.endswith('metadata.xml'):
+        if f.endswith('.xml'):
             file = os.path.join(dirName, f)
             #print file
             tree = ET.parse(file)
