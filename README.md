@@ -27,18 +27,10 @@ FC_template.xml
 
 This is a very basic template for collecting ISO 19110 metadata for the description of feature catalogs. Each attribute must have a name (LABEL) and a definition element. If attribute definitions/codelists are provided in a .csv file, see addAttrs.py to automate creating of these metadata using this template.
 
-{| class="wikitable"
-|-
-! Header 1
-! Header 2
-! Header 3
-|-
-| row 1, cell 1
-| row 1, cell 2
-| row 1, cell 3
-|-
-| row 2, cell 1
-| row 2, cell 2
-| row 2, cell 3
-|}
+| ISO Element       | GeoBlacklight  | Entry Method  |
+| ------------- |:-------------:| -----:|
+| Title      | dc_title_s | Free text |
+| ResponsibleParty (CI_RoleCode='originator') |dc_creator_sm| Controlled vocabulary |
+| Date | dct_isseud_s     | Date w3cdtf |
+
 
