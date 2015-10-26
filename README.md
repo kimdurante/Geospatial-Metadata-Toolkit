@@ -49,7 +49,6 @@ This is a very basic template for collecting ISO 19110 metadata for the descript
 | Language | dc_language_sm | ISO Codelist |
 | Aggregate Dataset Name* |dc_isPartOf_sm*  | Free text |
 | Hierarchy level | dc_type_s | ISO Codelist |
-| Hierarchy level | dc_type_s | ISO Codelist |
 | Metadata file identifier | dct_references | Text (uuid or namespace authority + identifier |
 | Spatial reference |  | EPSG Code |
 | Metadata contact |  | Contact template |
