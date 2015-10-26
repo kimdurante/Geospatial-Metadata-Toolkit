@@ -3,7 +3,7 @@ XML templates, XSLTs, and Python scripts, for working with geospatial metadata i
 
 ### XSLT
 
-modifyISO.xsl
+updateISO.xsl
 
 This XSL can be used for items that already have pre-existing metadata that need to be normalized. It also adds institutional level metadata, such as distributor information and thesauri citations. The example provided in the variables is from the National Atlas of the United States. The top-level variables can be replaced according to specific collection needs.
 
