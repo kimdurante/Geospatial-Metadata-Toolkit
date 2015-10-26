@@ -15,7 +15,7 @@ if __name__=="__main__":
 #for credit statement generation
 author = 'Hart Energy Publishing'
 publisher = 'Hart Energy Publishing'
-pubdate = '2007'
+pubdate = '2015'
 
 
 for dirName, subDirs, fileNames in os.walk('.'):
