@@ -27,31 +27,34 @@ FC_template.xml
 
 This is a very basic template for collecting ISO 19110 metadata for the description of feature catalogs. Each attribute must have a name (LABEL) and a definition element. If attribute definitions/codelists are provided in a .csv file, see addAttrs.py to automate creating of these metadata using this template.
 
+### Required and Recommended Fields
+
 | ISO Element       | GeoBlacklight  | Entry Method  |
 | ------------- |:-------------:| -----:|
 | Title      | dc_title_s | Free text |
 | ResponsibleParty (CI_RoleCode='originator') |dc_creator_sm| Controlled vocabulary |
-| Date | dct_isseud_s     | Date w3cdtf |
-| Responsible Party (CI_RoleCode =’publisher’) | dc_publisher_sm   | Controlled vocabulary |
+| Date | dct_issued_s     | Date w3cdtf |
+| Responsible Party (CI_RoleCode =’publisher’) *| dc_publisher_sm*   | Controlled vocabulary |
 | Abstract | dc_description | Free text |
 | Dataset Identifier | uuid | URI |
 | ISO Topic Category | dc_subject_sm | ISO Codelist |
 | Theme keyword(s) | dc_subject_sm | Controlled vocabulary |
 | Place keyword(s) | dc_spatial_sm | Controlled vocabulary |
 | Temporal extent | dc_temporal_sm/solr_year_i | Date(s) w3cdtf |
+| Geographic extent | georss_box_s | W,E,N,S decimal degrees |
 | Access/Use Constraints | dc_rights_s | ISO Codelist |
 | Distributor | dct_provenance_s | Contact template |
 | Metadata date stamp | layer_modified_dt | Date w3cdtf |
 | Distribution format | dc_format_s | Controlled vocabulary (local) |
 | Language | dc_language_sm | ISO Codelist |
-| Aggregate Dataset Name |dc_isPartOf_sm  | Free text |
-| Hierarchy level | dc_type_s | ISO Codelist |
-| Geographic extent | georss_box_s | W,E,N,S decimal degrees |
+| Aggregate Dataset Name* |dc_isPartOf_sm*  | Free text |
 | Hierarchy level | dc_type_s | ISO Codelist |
 | Hierarchy level | dc_type_s | ISO Codelist |
 | Metadata file identifier | dct_references | Text (uuid or namespace authority + identifier |
 | Spatial reference |  | EPSG Code |
 | Metadata contact |  | Contact template |
+
+* indicates Optional field
 
 
 
