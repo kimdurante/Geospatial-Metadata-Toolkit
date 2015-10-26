@@ -1,5 +1,6 @@
 # geoMetadata
-XML templates, XSLTs, and Python scripts, for working with geospatial metadata in ISO 19139 and 19110 formats.
+Templates, XSLTs, Python scripts, and field specifications for working with geospatial metadata in ISO 19139 and 19110 formats.
+
 
 ### XSLT
 
