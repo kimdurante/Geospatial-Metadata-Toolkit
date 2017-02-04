@@ -1,5 +1,4 @@
 #This script reads values from a csv and inserts them into the appropriate metadata fields.
-#This script replaces hardcoded values already in the XML which have been added using a template (e.g. URL, FILENAME') but does not create new element tags.
 #in this example, a csv named 'identifiers.csv' contains 3 columns: filenames, unique ids ('druids'), and the title for each layer
 
 
@@ -50,6 +49,3 @@ for dirName, subDirs, fileNames in os.walk('.'):
                    distName.text = k
                    print URL.text
                    tree.write(file)
-            
-                    
-                
