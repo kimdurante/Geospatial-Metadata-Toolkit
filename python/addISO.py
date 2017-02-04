@@ -1,3 +1,7 @@
+#This script reads values from a csv and inserts them into the appropriate metadata fields.
+#in this example, a csv named 'identifiers.csv' contains 3 columns: filenames, unique ids ('druids'), and the title for each layer
+
+
 import csv
 import os
 import xml.etree.ElementTree as ET
@@ -12,17 +16,10 @@ if __name__=="__main__":
         layerTitle = rows[2]
         metadict[filename] = druid, layerTitle
 
-#for credit statement generation
-author = 'Hart Energy Publishing'
-publisher = 'Hart Energy Publishing'
-pubdate = '2015'
-
-
 for dirName, subDirs, fileNames in os.walk('.'):
     for f in fileNames:
         if f.endswith('.xml'):
             file = os.path.join(dirName, f)
-            #print file
             tree = ET.parse(file)
             root = tree.getroot()
             ET.register_namespace('xsi', 'http://www.w3.org/2001/XMLSchema-instance')
@@ -42,13 +39,14 @@ for dirName, subDirs, fileNames in os.walk('.'):
             URI = root.find('gmd:dataSetURI/gco:CharacterString', namespaces=namespaces)
             distURL = root.find('gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:linkage/gmd:URL', namespaces=namespaces)
             distName = root.find('gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:name/gco:CharacterString',  namespaces=namespaces)
+ 
+ 
             for k, v in metadict.items():
                 if v[1] == title.text:
-                   #metadataID.text = 'edu.stanford.purl:' + v[0]
+                   metadataID.text = 'edu.stanford.purl:' + v[0]
                    URL.text = 'http//purl.stanford.edu/' + v[0]
                    distURL.text = 'http//purl.stanford.edu/' + v[0]
                    distName.text = k
-                   credit.text = author + '. ' + title.text + '(' + pubdate + '). ' + publisher + '. Available at: http//purl.stanford.edu/' + v[0] + '.'
                    print URL.text
                    tree.write(file)
             
