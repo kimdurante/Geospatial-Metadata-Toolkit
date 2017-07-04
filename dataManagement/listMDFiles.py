@@ -1,4 +1,4 @@
-#creates a csv ('layers.csv') of filenames and titles for GIS data
+#creates a csv ('layers.csv') based on values present in ARCGIS XML metadata.
 import xml.etree.cElementTree as ET
 import os, csv
 
