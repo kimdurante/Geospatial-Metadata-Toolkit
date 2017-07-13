@@ -1,0 +1,982 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xml:lang="en">
+	  <Esri>
+		    <CreaDate>20140114</CreaDate>
+		    <CreaTime>09521800</CreaTime>
+		    <ArcGISFormat>1.0</ArcGISFormat>
+		    <SyncOnce>FALSE</SyncOnce>
+		    <DataProperties>
+			      <itemProps>
+				        <itemName Sync="TRUE">cabomxpw</itemName>
+				        <nativeExtBox>
+					          <westBL Sync="TRUE">-109.985254</westBL>
+					          <eastBL Sync="TRUE">-109.888575</eastBL>
+					          <southBL Sync="TRUE">22.859352</southBL>
+					          <northBL Sync="TRUE">22.895039</northBL>
+					          <exTypeCode Sync="TRUE">1</exTypeCode>
+				        </nativeExtBox>
+				        <itemSize Sync="TRUE">0.014</itemSize>
+				        <itemLocation>
+					          <linkage Sync="TRUE">file://\\sul-gislab\gis_shared\GIS_Lab\DATA\Mexico_Demographics_2010_UCSD\cabo_san_lucas\cabomxpw.shp</linkage>
+					          <protocol Sync="TRUE">Local Area Network</protocol>
+				        </itemLocation>
+				        <imsContentType Sync="TRUE" export="False">002</imsContentType>
+			      </itemProps>
+			      <coordRef>
+				        <type Sync="TRUE">Geographic</type>
+				        <geogcsn Sync="TRUE">GCS_WGS_1984</geogcsn>
+				        <csUnits Sync="TRUE">Angular Unit: Degree (0.017453)</csUnits>
+				        <peXml Sync="TRUE">&lt;GeographicCoordinateSystem xsi:type='typens:GeographicCoordinateSystem' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:typens='http://www.esri.com/schemas/ArcGIS/10.3'&gt;&lt;WKT&gt;GEOGCS[&amp;quot;GCS_WGS_1984&amp;quot;,DATUM[&amp;quot;D_WGS_1984&amp;quot;,SPHEROID[&amp;quot;WGS_1984&amp;quot;,6378137.0,298.257223563]],PRIMEM[&amp;quot;Greenwich&amp;quot;,0.0],UNIT[&amp;quot;Degree&amp;quot;,0.0174532925199433],AUTHORITY[&amp;quot;EPSG&amp;quot;,4326]]&lt;/WKT&gt;&lt;XOrigin&gt;-400&lt;/XOrigin&gt;&lt;YOrigin&gt;-400&lt;/YOrigin&gt;&lt;XYScale&gt;11258999068426.238&lt;/XYScale&gt;&lt;ZOrigin&gt;-100000&lt;/ZOrigin&gt;&lt;ZScale&gt;10000&lt;/ZScale&gt;&lt;MOrigin&gt;-100000&lt;/MOrigin&gt;&lt;MScale&gt;10000&lt;/MScale&gt;&lt;XYTolerance&gt;8.983152841195215e-009&lt;/XYTolerance&gt;&lt;ZTolerance&gt;0.001&lt;/ZTolerance&gt;&lt;MTolerance&gt;0.001&lt;/MTolerance&gt;&lt;HighPrecision&gt;true&lt;/HighPrecision&gt;&lt;LeftLongitude&gt;-180&lt;/LeftLongitude&gt;&lt;WKID&gt;4326&lt;/WKID&gt;&lt;LatestWKID&gt;4326&lt;/LatestWKID&gt;&lt;/GeographicCoordinateSystem&gt;</peXml>
+			      </coordRef>
+		    </DataProperties>
+		    <SyncDate>20170419</SyncDate>
+		    <SyncTime>08403600</SyncTime>
+		    <ModDate>20170419</ModDate>
+		    <ModTime>08403600</ModTime>
+		    <scaleRange>
+			      <minScale>150000000</minScale>
+			      <maxScale>5000</maxScale>
+		    </scaleRange>
+		    <ArcGISProfile>ISO19139</ArcGISProfile>
+	  </Esri>
+	  <eainfo>
+		    <detailed Name="cabomxpw">
+			      <enttyp>
+				        <enttypl Sync="TRUE">cabomxpw</enttypl>
+				        <enttypt Sync="TRUE">Feature Class</enttypt>
+				        <enttypc Sync="TRUE">1</enttypc>
+			      </enttyp>
+			      <attr>
+				        <attrlabl Sync="TRUE">FID</attrlabl>
+				        <attalias Sync="TRUE">FID</attalias>
+				        <attrtype Sync="TRUE">OID</attrtype>
+				        <attwidth Sync="TRUE">4</attwidth>
+				        <atprecis Sync="TRUE">0</atprecis>
+				        <attscale Sync="TRUE">0</attscale>
+				
+				        <attrdefs Sync="TRUE">Esri</attrdefs>
+				        <attrdomv>
+					          <udom Sync="TRUE">Sequential unique whole numbers that are automatically generated.</udom>
+				        </attrdomv>
+			      </attr>
+			      <attr>
+				        <attrlabl Sync="TRUE">Shape</attrlabl>
+				        <attalias Sync="TRUE">Shape</attalias>
+				        <attrtype Sync="TRUE">Geometry</attrtype>
+				        <attwidth Sync="TRUE">0</attwidth>
+				        <atprecis Sync="TRUE">0</atprecis>
+				        <attscale Sync="TRUE">0</attscale>
+				
+				        <attrdefs Sync="TRUE">Esri</attrdefs>
+				        <attrdomv>
+					          <udom Sync="TRUE">Coordinates defining the features.</udom>
+				        </attrdomv>
+			      </attr>
+			      <attr>
+				        <attrlabl Sync="TRUE">ID</attrlabl>
+				        <attalias Sync="TRUE">ID</attalias>
+				        <attrtype Sync="TRUE">Integer</attrtype>
+				        <attwidth Sync="TRUE">10</attwidth>
+				        <atprecis Sync="TRUE">10</atprecis>
+				        <attscale Sync="TRUE">0</attscale>
+			      </attr>
+			      <attr>
+				        <attrlabl Sync="TRUE">NAME</attrlabl>
+				        <attalias Sync="TRUE">NAME</attalias>
+				        <attrtype Sync="TRUE">String</attrtype>
+				        <attwidth Sync="TRUE">80</attwidth>
+				        <atprecis Sync="TRUE">0</atprecis>
+				        <attscale Sync="TRUE">0</attscale>
+				
+			      </attr>
+			      <attr>
+				        <attrlabl Sync="TRUE">NAME_ALT</attrlabl>
+				        <attalias Sync="TRUE">NAME_ALT</attalias>
+				        <attrtype Sync="TRUE">String</attrtype>
+				        <attwidth Sync="TRUE">80</attwidth>
+				        <atprecis Sync="TRUE">0</atprecis>
+				        <attscale Sync="TRUE">0</attscale>
+				
+			      </attr>
+			      <attr>
+				        <attrlabl Sync="TRUE">FCC</attrlabl>
+				        <attalias Sync="TRUE">FCC</attalias>
+				        <attrtype Sync="TRUE">String</attrtype>
+				        <attwidth Sync="TRUE">3</attwidth>
+				        <atprecis Sync="TRUE">0</atprecis>
+				        <attscale Sync="TRUE">0</attscale>
+				
+			      </attr>
+			      <attr>
+				        <attrlabl Sync="TRUE">FCC_ALT</attrlabl>
+				        <attalias Sync="TRUE">FCC_ALT</attalias>
+				        <attrtype Sync="TRUE">String</attrtype>
+				        <attwidth Sync="TRUE">10</attwidth>
+				        <atprecis Sync="TRUE">0</atprecis>
+				        <attscale Sync="TRUE">0</attscale>
+				
+			      </attr>
+		    </detailed>
+	  </eainfo>
+	  <mdLang>
+		    <languageCode value="eng"/>
+		    <countryCode Sync="TRUE" value="USA"/>
+	  </mdLang>
+	  <mdChar>
+		    <CharSetCd value="004"/>
+	  </mdChar>
+	  <mdParentID>http://purl.stanford.edu/jv541yy2984.mods</mdParentID>
+	  <mdHrLv>
+		    <ScopeCd value="005"/>
+	  </mdHrLv>
+	  <mdContact>
+		    <rpOrgName>Stanford Geospatial Center</rpOrgName>
+		    <rpCntInfo>
+			      <cntAddress addressType="physical">
+				        <delPoint>Branner Earth Sciences Library</delPoint>
+				        <city>Stanford</city>
+				        <adminArea>California</adminArea>
+				        <postCode>94305</postCode>
+				        <eMailAdd>brannerlibrary@stanford.edu</eMailAdd>
+				        <delPoint>Mitchell Building, 2nd Floor</delPoint>
+				        <delPoint>397 Panama Mall</delPoint>
+				        <country>US</country>
+			      </cntAddress>
+			      <cntPhone>
+				        <voiceNum>650-723-2746</voiceNum>
+			      </cntPhone>
+		    </rpCntInfo>
+		    <displayName>Stanford Geospatial Center</displayName>
+		    <displayName>Stanford Geospatial Center</displayName>
+		    <role>
+			      <RoleCd value="007"/>
+		    </role>
+	  </mdContact>
+	  <distInfo>
+		    <distributor>
+			      <distorCont>
+				        <rpOrgName>Stanford Geospatial Center</rpOrgName>
+				        <rpCntInfo>
+					          <cntAddress addressType="physical">
+						            <delPoint>Branner Earth Sciences Library</delPoint>
+						            <city>Stanford</city>
+						            <adminArea>California</adminArea>
+						            <postCode>94305</postCode>
+						            <eMailAdd>brannerlibrary@stanford.edu</eMailAdd>
+						            <delPoint>Mitchell Building, 2nd Floor</delPoint>
+						            <delPoint>397 Panama Mall</delPoint>
+						            <country>US</country>
+					          </cntAddress>
+					          <cntPhone>
+						            <voiceNum>650-723-2746</voiceNum>
+					          </cntPhone>
+				        </rpCntInfo>
+				        <displayName>Stanford Geospatial Center</displayName>
+				        <displayName>Stanford Geospatial Center</displayName>
+				        <role>
+					          <RoleCd value="005"/>
+				        </role>
+				        <displayName>Stanford Geospatial Center</displayName>
+			      </distorCont>
+		    </distributor>
+		    <distFormat>
+			      <formatName Sync="TRUE">Shapefile</formatName>
+		    </distFormat>
+		    <distTranOps>
+			      <onLineSrc>
+				        <linkage>PURL</linkage>
+            <protocol>http</protocol>
+				        <orName>cabomxpw.shp</orName>
+				        <orFunct>
+					          <OnFunctCd value="001"/>
+				        </orFunct>
+			      </onLineSrc>
+			      <transSize Sync="TRUE">0.014</transSize>
+      </distTranOps>
+	  </distInfo>
+	  <dataIdInfo>
+		    <themeKeys>
+			      <thesaName>
+				        <resTitle>lcsh</resTitle>
+				        <date>
+					          <reviseDate>2011-04-26T00:00:00</reviseDate>
+				        </date>
+				        <citId>
+					          <identCode>http://id.loc.gov/authorities/subjects.html</identCode>
+				        </citId>
+			      </thesaName>
+			      <keyword>California, Gulf of (Mexico)</keyword>
+			      <keyword>Bays</keyword>
+			      <keyword>Bodies of water</keyword>
+		    </themeKeys>
+		    <placeKeys>
+			      <thesaName>
+				        <resTitle>geonames</resTitle>
+				        <date>
+					          <reviseDate>2012-11-01T00:00:00</reviseDate>
+				        </date>
+				        <resEd>3.1</resEd>
+				        <citId>
+					          <identCode>http://www.geonames.org/ontology#</identCode>
+				        </citId>
+			      </thesaName>
+			      <keyword>Cabo San Lucas (Baja California Sur, Mexico)</keyword>
+		    </placeKeys>
+		    <dataLang>
+			      <languageCode value="eng"/>
+			      <countryCode Sync="TRUE" value="USA"/>
+		    </dataLang>
+		    <dataChar>
+			      <CharSetCd value="004"/>
+		    </dataChar>
+		    <idPoC>
+			      <role>
+				        <RoleCd value="007"/>
+			      </role>
+			      <rpIndName>Marc Bourdon</rpIndName>
+			      <rpOrgName>LeadDog Consulting</rpOrgName>
+			      <rpPosName>GIS Manager</rpPosName>
+			      <rpCntInfo>
+				        <cntAddress addressType="">
+					          <eMailAdd>marc@goleaddog.com</eMailAdd>
+				        </cntAddress>
+				        <cntPhone>
+					          <voiceNum tddtty="">907-947-5705</voiceNum>
+				        </cntPhone>
+			      </rpCntInfo>
+		    </idPoC>
+		    <aggrInfo>
+			      <assocType>
+				        <AscTypeCd value="002"/>
+			      </assocType>
+			      <initType>
+				        <InitTypCd value="002"/>
+			      </initType>
+			      <aggrDSName>
+				        <citId>
+				        	<identCode>PURL</identCode>
+				        </citId>
+				        <citRespParty>
+					          <rpOrgName>LeadDog Consulting (Firm)</rpOrgName>
+					          <role>
+						            <RoleCd value="006"/>
+					          </role>
+					          <rpCntInfo>
+						            <cntAddress addressType="both">
+							              <delPoint>1462 Center Rd.</delPoint>
+							              <city>Corinth</city>
+							              <adminArea>VT</adminArea>
+							              <postCode>05039</postCode>
+							              <eMailAdd>jim@goleaddog.com</eMailAdd>
+							              <country>US</country>
+						            </cntAddress>
+						            <cntPhone>
+							              <voiceNum tddtty="">1-888-750-0309</voiceNum>
+						            </cntPhone>
+						            <cntInstr>http://goleaddog.com/</cntInstr>
+					          </rpCntInfo>
+					          <displayName>LeadDog Consulting (Firm)</displayName>
+				        </citRespParty>
+				        <citRespParty>
+					          <rpOrgName>LeadDog Consulting (Firm)</rpOrgName>
+					          <role>
+						            <RoleCd value="010"/>
+					          </role>
+					          <rpCntInfo>
+						            <cntAddress addressType="both">
+							              <delPoint>1462 Center Rd.</delPoint>
+							              <city>Corinth</city>
+							              <adminArea>VT</adminArea>
+							              <postCode>05039</postCode>
+							              <eMailAdd>jim@goleaddog.com</eMailAdd>
+							              <country>US</country>
+						            </cntAddress>
+						            <cntPhone>
+							              <voiceNum tddtty="">1-888-750-0309</voiceNum>
+						            </cntPhone>
+						            <cntInstr>http://goleaddog.com/</cntInstr>
+					          </rpCntInfo>
+					          <displayName>LeadDog Consulting (Firm)</displayName>
+				        </citRespParty>
+				        <resTitle>Mexico GIS Maps and Data</resTitle>
+				        <date>
+					          <pubDate>2010-12-31T00:00:00</pubDate>
+				        </date>
+			      </aggrDSName>
+		    </aggrInfo>
+		    <dataExt>
+			      <exDesc>ground condition</exDesc>
+			      <tempEle>
+				        <TempExtent>
+					          <exTemp>
+						            <TM_Period>
+							              <tmBegin>2010-01-01T00:00:00</tmBegin>
+							              <tmEnd>2010-12-31T00:00:00</tmEnd>
+						            </TM_Period>
+					          </exTemp>
+				        </TempExtent>
+			      </tempEle>
+		    </dataExt>
+		    <idPurp>LeadDog Consulting (Originator and Publisher) has a Mexico-based data partner network for which they have access to GIS data sets to create city streets maps for Mexico, which may include streets, street names, street classifications, points of interests, landuse, water, neighborhood points, and railroads. These data are intended for geographic display and analysis at the city level. No responsibility is assumed by LeadDog Consulting. </idPurp>
+		    <idAbs>&lt;DIV STYLE="text-align:Left;"&gt;&lt;DIV&gt;&lt;DIV&gt;&lt;P&gt;&lt;SPAN&gt;This polygon shapefile represents the boundary of the Gulf of Cortez in Cabo San Lucas (Mexico).&lt;/SPAN&gt;&lt;/P&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/DIV&gt;</idAbs>
+		    <idCitation>
+			      <date>
+				        <pubDate>2010-12-31T00:00:00</pubDate>
+			      </date>
+			      <citRespParty>
+				        <rpOrgName>LeadDog Consulting (Firm)</rpOrgName>
+				        <role>
+					          <RoleCd value="006"/>
+				        </role>
+				        <rpCntInfo>
+					          <cntAddress addressType="both">
+						            <delPoint>1462 Center Rd.</delPoint>
+						            <city>Corinth</city>
+						            <adminArea>VT</adminArea>
+						            <postCode>05039</postCode>
+						            <eMailAdd>jim@goleaddog.com</eMailAdd>
+						            <country>US</country>
+					          </cntAddress>
+					          <cntPhone>
+						            <voiceNum>1-888-750-0309</voiceNum>
+					          </cntPhone>
+					          <cntInstr>http://goleaddog.com/</cntInstr>
+				        </rpCntInfo>
+			      </citRespParty>
+			      <citRespParty>
+				        <rpOrgName>LeadDog Consulting (Firm)</rpOrgName>
+				        <role>
+					          <RoleCd value="010"/>
+				        </role>
+				        <rpCntInfo>
+					          <cntAddress addressType="both">
+						            <delPoint>1462 Center Rd.</delPoint>
+						            <city>Corinth</city>
+						            <adminArea>VT</adminArea>
+						            <postCode>05039</postCode>
+						            <eMailAdd>jim@goleaddog.com</eMailAdd>
+						            <country>US</country>
+					          </cntAddress>
+					          <cntPhone>
+						            <voiceNum>1-888-750-0309</voiceNum>
+					          </cntPhone>
+					          <cntInstr>http://goleaddog.com/</cntInstr>
+				        </rpCntInfo>
+				        <displayName>LeadDog Consulting (Firm)</displayName>
+			      </citRespParty>
+			      <collTitle>Mexico GIS Maps and Data</collTitle>
+			      <resTitle Sync="FALSE">Gulf of Cortez: Cabo San Lucas, Mexico, 2010</resTitle>
+			      <presForm>
+				        <PresFormCd Sync="TRUE" value="005"/>
+			      </presForm>
+			      <citId>
+			      	<identCode>PURL</identCode>
+         </citId>
+		    </idCitation>
+		    <idStatus>
+			      <ProgCd value="001"/>
+		    </idStatus>
+		    <resMaint>
+			      <maintFreq>
+				        <MaintFreqCd value="012"/>
+			      </maintFreq>
+		    </resMaint>
+		    <resConst>
+			      <LegConsts>
+				        <accessConsts>
+					          <RestrictCd value="007"/>
+				        </accessConsts>
+				        <useConsts>
+					          <RestrictCd value="007"/>
+				        </useConsts>
+				        <useLimit>Access is granted to Stanford University affiliates only. Affiliates are limited to current faculty, staff, and students.</useLimit>
+			      </LegConsts>
+		    </resConst>
+		    <idCredit>Instituto Nacional de Estadística, Geografía e Informática (Mexico) and LeadDog Consulting. (2010). Gulf of Cortez: Cabo San Lucas, Mexico, 2010. LeadDog Consulting</idCredit>
+		    <dataScale>
+			      <equScale>
+				        <rfDenom>1:5000</rfDenom>
+			      </equScale>
+		    </dataScale>
+		    <tempKeys>
+			      <keyword>2010</keyword>
+		    </tempKeys>
+		    <envirDesc Sync="TRUE">Microsoft Windows 7 Version 6.1 (Build 7601) Service Pack 1; Esri ArcGIS 10.3.1.4959</envirDesc>
+		    <spatRpType>
+			      <SpatRepTypCd Sync="TRUE" value="001"/>
+		    </spatRpType>
+		    <dataExt>
+			      <geoEle>
+				        <GeoBndBox esriExtentType="search">
+					          <exTypeCode Sync="TRUE">1</exTypeCode>
+					          <westBL Sync="TRUE">-109.985254</westBL>
+					          <eastBL Sync="TRUE">-109.888575</eastBL>
+					          <northBL Sync="TRUE">22.895039</northBL>
+					          <southBL Sync="TRUE">22.859352</southBL>
+				        </GeoBndBox>
+			      </geoEle>
+		    </dataExt>
+		    <tpCat>
+			      <TopicCatCd value="008"/>
+		    </tpCat>
+		    <tpCat>
+			      <TopicCatCd value="012"/>
+		    </tpCat>
+		    <tpCat>
+			      <TopicCatCd value="013"/>
+		    </tpCat>
+	  </dataIdInfo>
+	  <dqInfo>
+		    <dqScope>
+			      <scpLvl>
+				        <ScopeCd value="005"/>
+			      </scpLvl>
+		    </dqScope>
+	  </dqInfo>
+	  <contInfo>
+		    <FetCatDesc>
+			      <compCode>False</compCode>
+			      <catLang>
+				        <languageCode value="eng"/>
+			      </catLang>
+			      <incWithDS>True</incWithDS>
+			      <catCitation>
+				        <resTitle>Feature Catalog for Gulf of Cortez: Cabo San Lucas, Mexico, 2010</resTitle>
+				        <date>
+					          <pubDate>2010-12-31T00:00:00</pubDate>
+				        </date>
+				        <citId>
+					          <identCode>2f7aa807-5a4e-410e-bb31-afcc879b6619</identCode>
+            </citId>
+				        <citRespParty>
+					          <rpOrgName>LeadDog Consulting</rpOrgName>
+					          <role>
+						            <RoleCd value="006"/>
+					          </role>
+					          <rpCntInfo>
+						            <cntAddress addressType="both">
+							              <delPoint>1462 Center Rd.</delPoint>
+							              <city>Corinth</city>
+							              <adminArea>VT</adminArea>
+							              <postCode>05039</postCode>
+							              <eMailAdd>jim@goleaddog.com</eMailAdd>
+							              <country>US</country>
+						            </cntAddress>
+						            <cntPhone>
+							              <voiceNum>1-888-750-0309</voiceNum>
+						            </cntPhone>
+						            <cntInstr>http://goleaddog.com/</cntInstr>
+					          </rpCntInfo>
+					          <displayName>LeadDog Consulting</displayName>
+				        </citRespParty>
+			      </catCitation>
+		    </FetCatDesc>
+	  </contInfo>
+	  <mdHrLvName Sync="TRUE">dataset</mdHrLvName>
+	  <refSysInfo>
+		    <RefSystem dimension="">
+			      <refSysID>
+				        <identCode Sync="TRUE" code="4326" value="4326"/>
+				        <idCodeSpace Sync="TRUE">EPSG</idCodeSpace>
+				        <idVersion Sync="TRUE">8.6.2</idVersion>
+			      </refSysID>
+		    </RefSystem>
+	  </refSysInfo>
+	  <spatRepInfo>
+		    <VectSpatRep>
+         <geometObjs Name="cabomxpw">
+            <geoObjTyp>
+               <GeoObjTypCd value="002" Sync="TRUE"/>
+            </geoObjTyp>
+            <geoObjCnt Sync="TRUE">1</geoObjCnt>
+         </geometObjs>
+         <topLvl>
+            <TopoLevCd value="001" Sync="TRUE"/>
+         </topLvl>
+      </VectSpatRep>
+   </spatRepInfo>
+	  <spdoinfo>
+		    <ptvctinf>
+         <esriterm Name="cabomxpw">
+            <efeatyp Sync="TRUE">Simple</efeatyp>
+            <efeageom code="4" Sync="TRUE"/>
+            <esritopo Sync="TRUE">FALSE</esritopo>
+            <efeacnt Sync="TRUE">1</efeacnt>
+            <spindex Sync="TRUE">FALSE</spindex>
+            <linrefer Sync="TRUE">FALSE</linrefer>
+         </esriterm>
+      </ptvctinf>
+   </spdoinfo>
+	  <mdDateSt Sync="TRUE">20170419</mdDateSt>
+	<mdFileID>PURL</mdFileID>
+	<dataSetURI>PURL</dataSetURI>
+   <Binary>
+		    <Thumbnail>
+			      <Data EsriPropertyType="PictureX">/9j/4AAQSkZJRgABAQEAYABgAAD/4RCoRXhpZgAATU0AKgAAAAgABAE7AAIAAAASAAAISodpAAQA
+AAABAAAIXJydAAEAAAAkAAAQfOocAAcAAAgMAAAAPgAAAAAc6gAAAAgAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAERpbGxvbiwgS2F0aGVy
+aW5lAAAB6hwABwAACAwAAAhuAAAAABzqAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEAGkAbABsAG8AbgAsACAASwBhAHQAaABl
+AHIAaQBuAGUAAAD/4QH2aHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVn
+aW49J++7vycgaWQ9J1c1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCc/Pg0KPHg6eG1wbWV0YSB4bWxu
+czp4PSJhZG9iZTpuczptZXRhLyI+PHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9y
+Zy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj48cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0i
+dXVpZDpmYWY1YmRkNS1iYTNkLTExZGEtYWQzMS1kMzNkNzUxODJmMWIiIHhtbG5zOmRjPSJodHRw
+Oi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyI+PGRjOmNyZWF0b3I+PHJkZjpTZXEgeG1sbnM6
+cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj48cmRmOmxp
+PkRpbGxvbiwgS2F0aGVyaW5lPC9yZGY6bGk+PC9yZGY6U2VxPg0KCQkJPC9kYzpjcmVhdG9yPjwv
+cmRmOkRlc2NyaXB0aW9uPjwvcmRmOlJERj48L3g6eG1wbWV0YT4NCjw/eHBhY2tldCBlbmQ9J3cn
+Pz7/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMU
+FRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQU
+FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAGqA+wDASIAAhEBAxEB/8QAHwAAAQUBAQEB
+AQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1Fh
+ByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZ
+WmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXG
+x8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAEC
+AwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHB
+CSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0
+dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX
+2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9U6KKKCAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
+oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
+igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
+oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
+igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
+oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
+igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACijNFABRRmigAooozQAUUZozQMKKM0ZoAKKM0UC
+CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK
+KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoo
+ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiii
+gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKCcUZ
+xSZzQAgGaUDAoAwK5XWPHdjp1/Jp9nHPrWrxEeZp2mqskkeV3DzGZljh3L8y+Yy7sHburKc40480
+mVudSTkelctrHjqx02/k0+zjn1rV4iPM07TVWSWLK7h5jMyxw7l+ZfMZd207d1Zcmm654jfOtal/
+ZlqR/wAgzQp5E3c/8tLrCyN0Vl8tYf4lbzFrX0vSrHRLGKzsLS30+ziLeXb20axxrubcdqrwOa+Y
+xefUqXu0Pel+B0Ro/wAxkPY+J9ak8+81seHm52WuiRxzbR38ya4ibzOzLtjj27mU7vvU4eG9bH/M
+96//AN+NO/8AkSukyKMivmJZti5S5uc29nE5v/hHNb/6HvX/APvxp3/yJR/wjmt/9D3r/wD3407/
+AORK6TIoyKj+1MX/AM/A9nE5v/hHNb/6HvX/APvxp3/yJR/wjet/9D3r/wD3407/AORK6TIoyKP7
+Uxf/AD8D2cTB8AXOoSzeKLG/1W41dtP1JbaG5uUiWTy2tLeTa3lxov3pG/hrtl6VxngEZ1vx1/2G
+o/8A03WVdkCcV+lYOcqlCEpdkcUtx1FFFdhAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFF
+FABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUU
+AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQA
+UUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABR
+RRQAUUUUAFFFFABRRRQAUh6UZrJ1vV7bQtOmvLyYwW6YBYBmZmY7VVVHzMzMyqqr8zMyqvNJuwzV
+B45rjJPiAmqDy/Ctn/wkLZz9tM3k6ev/AG8bW8z+Jf3KybWXa22swaBP4wknuPFNmn2PzMWeiPcG
+WBYdq/Ncx/6uSbf/AA/vI49ieWd25m65QwPNfH47PVSl7PDxv5nVGlf4jmJfDeq64x/t7xBPOE+5
+baL5mmRDjhmZJGmZuW/5aeX9393uXdWzpek2OiWUVnp9pBYWcRby7e3jWONdzbjtVeBzV7ilBwK+
+Sr4utiP4suY3jFR2FoooriNAooooAKKKKACiiigDD8A/8hzx1/2Go/8A03WVdjXHeAv+Q546/wCw
+1H/6brKuxr9bwX+60/8ADH8jzJ/EPooor0CAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKK
+KACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigA
+ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+iigAooooAKKKTNAC0h6UtYmteIdN8OWa3WpXiWkUsnlRB/vTS/wxxr96SRtvyqu5m/hobsMu317b
+6daTXV3NHb28KNJJNK21Y1X7zFjwBiuMs7iXxlq0OqXEVxa6Xps27TIJ4WgkmkaHa9xIrqsi/wCs
+kjWNlX+KT5t0flstxeeOZdK1XUIb3RtNgdbm30W5WNZJm2/LJdL820q21kjVvlZVZvm2rH1XQZNf
+D5tmt+bD4f5s66dP7Uh1FA6UV8YdQUUUUAFFFFABRRRQAUUUUAFFFFAGH4C/5Dnjr/sNR/8Apusq
+7GuO8A/8hzx1/wBhqP8A9N1lXY1+t4L/AHWn/hj+R5k/iH0UUV6BAUUUUAFFFFABRRRQAUUUUAFF
+FFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUU
+UAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQ
+AUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAB
+RRRQAUUUUAFFFFABRRRQAUGikzigYDgVka34k0vw1aLdarqlnpdsz+Uk17cLCjN/d3N3+U1zsvia
+fxY7J4YvYE05cCbW1RbhZev7u2+bazr3lbdGrfLtkbzFjk0fwtp+kXTXuJbzVZY/Ll1O9k8y5Zc7
+mXf/AMs493zeXHtjVvuqteBjM3oYV8kfekbxpuRXi+Id5q0lxFonhbVZjHJ5cd5rCjT7ZvlViSJP
+9I287dwhb5v9n5qfpvhGGHUYtW1Nzq2uqCRe3GSsDMpVhbxlmWFdp2/L8zKq+Y0jfNXRYJ70hwK+
+OxebYjFrlfuxOmNNRHUUUV4pqFFFFIAooooAKKKKACiiigAooooAKKKKAMPwD/yGvHP/AGGov/Td
+ZV2NcT8P1Z9U8Z3C/Nbza0PKkA+V9lnaxvtb+La8cin/AGlZf4a7av1zB/7tT/wr8jzZfEPooorv
+MwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA
+CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK
+KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoo
+ooAKKKKACiiigAooooAKKKKACijNGc0AFFFFABRRRQAUUUmc0AJjrzXn+oalH4/litrIynw0sm69
+uJY2WLUl2ELBHuH7yFsrI0i/u2VQv7xZJNsevarJ401pdFsIvtGg2UxOsTy71huxtlX7LE2zbNtk
+VfOXcqrt8tt26RV6z71fJZvmvsf3FH4jpp0+b3pFazs4NPtYLa2ijt7aGNY44Yl2qirwqqvYVboo
+r4Nu+rOwKKKKkYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUU1uBjfCz/kVrr/sM6r/AOnG4rrq
+5H4Wf8itdf8AYZ1X/wBONxXXV+xUP4MTypfEPoooroEFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAF
+FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUU
+UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRR
+QAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRnNJmgBCc0mcVx
+cvxKsLtgNEs7/wATndkS6VEv2ZlHBZbiVo4ZMN8pVJGbdn5flbba8LeKZ9dv9RstR03+x7+z8udb
+ZpxMWt5A3lyMyrtVt0cyMqs21o2wzKys3Oq9GVT2al7xVpHWjpRRRXQSFFFB5FADCeK881bXbnx3
+ENN0GXUbHSp94ufEECiEeVtYBbVn+ZmYmJlmWNo/LLFJN22rvjmUa9KvhKAHGoRGXUJB8yR2e5Ve
+Nv7rTjfGv3flWZlbdHtboD19q+WzfM3hV7Gj8X5HRTp83vSKtnZwafawW1tFHb20MaxxwxLtVFXh
+VVewq3RRX5+25O7O0KKKKkYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFNbgY3ws/5Fa6
+/wCwzqv/AKcbiuurkfhZ/wAitdf9hnVf/TjcV11fsVD+DE8qXxD6KKK6BBRRRQAUUUUAFFFFABRR
+RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFF
+ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUA
+FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABQeRRRQ
+Bm6ub4aTef2V9n/tLyZPsv2vd5Pnbfk8zb823djdt56153pnh218d+H9K1zUtQ1DUbm8hg1G0kl2
+RJZSfLNE8MA3RqyN91m8xtrMrSSLXqnQ15/osZ0LxJreiPmOKWZtVsEP3Wim/wBeqseWZbjzZG+8
+FW4h/vKq/P5x7WND2lGXLynRStf3jT0LRLTw1pFvpenRyQ2VtH5cMckzyMq/3dzMzbf5Vm+LJhob
+2XilT8uj+Z9sx1axk2/af++dkc3yrubyNq/6yunIzWFrHi/SNBvRZ3d8n9oPH5senwI013IvPzJD
+HukZflb7q/wt6V8LhK1aFeNSHvSOqUVynbA5o6CuL+GEV5a+GfsU9lc2VhaTmHSzcqElkssK0O6P
+70e1W8vbJ+8/d7m2sxVe0bpX6tCXNG55wgGDTicUVx3xOuri08Ca6LWaW31K4tmtLKSBiji6mPkw
+bW/hPmSJ838PXiqb5VcNzM8ByDVNHXxDNmW61r/S1lbHmLaszNawsP4fLhZflX5dxkb5mZmbqzyK
+q2dlBp9tDbW0MdvbQosccMS7VRV4VVXsKtZ5r8fxVaVarKpL7R6UY8qFooormLCiiigAooooAKKK
+KACiiigAooooAKKKKACiiigAooooAKKKKa3AxvhZ/wAitdf9hnVf/TjcV11cj8LP+RWuv+wzqv8A
+6cbiuur9iofwYnlS+IfRRRXQIKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKK
+KACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigA
+ooooAKKKKACiiigAooooAKKKKACiiigAooooAKQ9KWigBgGWrh/iDF/Za6X4kj+R9Mm8i4Lfd+xz
+PGsxZuirHtjnZv7tuyllVmau6AxVK+srfULSe1u4Y7i3mRo5IZV3LIrfeUqeCMVhWpRr05U31Ki+
+UqYwK5jwNBFpHjLxfplvDGkVxJb60WjTYN8ytCy7fXdZtIW/i87/AGdzL4QnuLOO40K9mlnvtIfy
+PPmYtJcW/wDywmZm+ZmZflZ/utJHNt+7S6oxsfHvhS9H7z7T9q0ny+y+ZGtx5n4fY9u3/ppu/h+b
+4HLE8Fj/AGUvQ7KnvQ5jvcUHpRnFB6V+inENJwK4jxtIdW1PQPD4ygnm/tSeQ44is5YZAq9fnaZr
+f+H/AFfmfdbbXbkcVxfiDj4n+Hf+wNqf/o+wrzswnKnhqko9i6avI36KQdKWvyY9EKKKKQwooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiimtwMb4Wf8itdf8AYZ1X/wBONxXXVyPws/5F
+a6/7DOq/+nG4rrq/YqH8GJ5UviAAmgDNKTzmvLfAvxH1Wfwz4UfxFpcqtqttbbdYt5o3tmkkiDL5
+3EbRSSN8u1Y2TdJGqsxbbVSrQpyUZPcfKeqCiijOK2JCiiigAooooAKKKKACiiigAooooAKKKKAC
+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKK
+KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
+oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACkxRmsnW9XttC06a8vJjB
+bpgFgGZmZjtVVUfMzMzKqqvzMzKq80PQZzOuL/ZnxF0e6iJJ1W0ms7mGL5nbyT5kMpX+GOPdOjMv
+8VxCrbvl22/EujHxBpNzZxzG2uDtkt7nZuFvNG6yQybc/NtkVW2/dbbtaoNCsrm6updY1eMrqk/m
+rFBI6sbO3L/LCu35VbasbSMrNuk/iZUj275GFzX5lmeKjPF+2o/Z/Q76cbRsyt4Y18eIdOkmeL7H
+d21xJa3VqG3GGVTz77WXbIjMqlo5Ebau6uhxxXC3Ym8NazcaxawvdWl0sa6hZwoTINm4LcRqv+sk
+24Vl+8yRx7fmjWOTM8YfHDw7oelxXGj674d1i7e6hgNu+txwhVkkWPzCyrIcLuVm+X7u5v4a+4wW
+Op4mj7Tr1OWUeWR6ZnFcR4wX7F4y8I3sZLS3E9zpTK5GBHJbtcMw/wBrdZx/8BZu+NtO28V+OZr2
+6gfwfpMMcO0JdP4gfyrjcP4dtru+XvuVf9ndVLxTofibxvZRw3r6DopgmjubYpby6jJbXEbBo7iO
+RmhCsv8AdMbL/e3KzLXLi8fg6lKVOU9yowlzHd0VwXgXwTrnhO5BvfFD6zbfZfJeOZbhmmlyu2Zm
+muJArcP8saxq3mf7K7e86ivzqtCMJWjLmO1C0UUVgMKKKKACiiigAooooAKKKKACiiigAooooAKK
+KKACiiigAoooprcDG+Fn/IrXX/YZ1X/043FddXI/Cz/kVrr/ALDOq/8ApxuK66v2Kh/BieVL4hQe
+DXm3w5s4dQ+FHhW1uokuLabQ7SN4ZF3I6tbruVl/iWvSR0Nef/Cv/kmXhD/sDWf/AKJSvmeIHaFO
+3c6aOpJA2r+Dj5djDc+IdHOX+yz3u69t26bY5Jm/fKzfN+9kVl+bazLtjXY8J+MtM8Y2XmafdI91
+EqPc2DyL9ps2Yf6ueNWPlupVlZT/ABK1XevWsXXvDOn+Imga7hzPbk+RdwO0Nzb7vv8AlzRsske7
+aFbaw3KNtebg88qUVy1/ej+JUqXN8J2IOKMmuGi1/U/Cg8rVF1DXtOHzLqtvbJJcR8crNDCqs3zf
+daGNvlb5lXb5jdRo2r2GvafHe6deQahZzFtlzbSrJG207TtZeDyvavtaGKpYmHPTZzOLjuaYOaKA
+ciiusgKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKK
+KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooo
+oAKDyKKCcUAMAAOK4SeY+KPFWoQXJzpehzQRrbNn97eeWs3mN/eVFkg8v/pp5jFdyRsvdgjOa4PS
+Lc+FNYvNIucpbX15cXumzuSfO85mnmhZv+eiyNMyr/zz27d2yTb4ebSrRwkvZ/0jaly8x09FFFfm
+B6Bw/jH4kW3grVEtJtD1W9EkSyR3FpHCsUjFmVYY2kkXzJ+PlhXczfwrS+DviV/wmWqSWX/CLeJd
+DMcLTfadZ0/7PE3zKu1W3N83zf8AjrVznx1u4Y7v4cWhmQXMni2xkjh3fMyru3Nt/uruX/vpa9ZJ
+5r06ijChGXL70jNfEJnJrnvEHjrw/wCFbiO31TVLeC+m8vybJCZLmbc21fLhXdI3zf3Vros81ieA
+h/xPfHXr/bMX/pusq0yzBRxlXknIVSXKjO8K+Lp9c1bWNMv9P/svUdPMckloLqO4aOKRpPK8wx/K
+sjLHvMY3bVkj+Zt3y9WOay9a0G9gvptV0Jbc3sxUXVldSPHBd/LtDMyq3lyKMfNtbcqhWH+raOPR
+9dh1h5oUiuLO9t9v2iyvImjlhLZ/76Xcrqsibo22NtZttdOZ5bLC1OanH3BU58xtUUUV4Nn2NQoo
+ozUjCijNFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRTW4GN8LP8AkVrr/sM6r/6cbiuurkfh
+Z/yK11/2GdV/9ONxXXV+xUP4MTypfEL/AA/hXn/ws/5Jh4Q/7A1n/wCiUr0D+H8K8/8AhZ/yTDwh
+/wBgaz/9EpXzHEH8KB0UdzqR0oxQOlLXwZ2iE4rnNQ8CaDqd/NqE2lQR6pIctqVrm3vPu7fluI9s
+i/L8v3vu/L92ukpCcVrCrOlLmhITVzmra68V6GhgjaDxRFISIZ75lspYWzuPnNGjK6/eVfLjVlxG
+rK25pFsx/EBNKHl+KrP/AIR1s5+2ibztPb/t42r5f8K/vlj3M21d1bYFAJzX0FHPcRS5ef3jB0Ys
+n0bV7HX7CO9068g1Czl3bLm2lEkbbWKttZeDyvatFulee3fw/wBFnupLpbSW1vJpGd7uxuZrWfDH
+cyiSJlZY2bdI0f3WkZnK7m3U+O+1bwZdRNPdXmt+GvLdW3WzXV9ZyceWB5fzTQ7QV+7JNuZWZmXc
+y/S4XOqGIlyS91mEqTiegjpRWRomr22u6dDeWcxnt3yAxDKysp2srKfmVlZWVlb5lZWVua16+hTu
+YBRRnNFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRR
+QAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFA
+BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQA0EGsXX
+dBh8Q2kcU7yQPFIJre5tm2y28vaSNvXDMuPusrMrKysy1tEYFKp4rOUVNcsiji9F1a4ubm90zUER
+NW091WYxLtimVl3RzRq3zCNvmX+La0ci7m2bmZd6nqF/fyadocNvNeQlftV1dllgtNy/L90fvJMM
+reUNvy/eaPdHu19f8MWviFbZrqSe2nh3KlzaTGGVUbHmR7hztZVGf91WXayqy3tH0ix0CwjsdOs4
+NPs4S3l21rEsca7m3NtVeBy3bvXzUcjpfWJVH8PY29q+U56T4d6e2lXVm015Pd3UkM0upTy+ZdCW
+J/MjkVm+VQsg8xY1Xy1Zm/d7WZaqyN4h8M7je2x8RaavW+09Nt3Gv96S3+7J8o3M0PzMzbUgrvNv
+FJnivZr4DD4iPLOJnGconnln4j8Qa+DLo3hmSG2V3QP4huGsGl2sV3RxrHJJt+XP7xY/vLjduO3b
+8H+GL/w8dXm1HULfULzUr0Xkr21q1vGuIYYQqq0kh6Qj+L+KuooK5FRhcvoYP3qcdQlOUxwaua1z
+wVo/iO6+13VvJFfBBF9tsbiS1ujFnd5fnQssmzc27buxnn0rpCMClU8V3yipq0iTgZ/gv4SvdQtL
+zUdOuNaktS3kpq2oXF9FHuG1v3c8jL0/2f4V/uinX3wxtIrWW38PXUnhGG5Ro54NKhjjikVvlMgX
+b+7mVS22RNvzeXv8xY1Wu6JzQOlRKhTlHkcdA5jybQvtnwyuL2y8Qyahd6beXt1d2mqNcXOoR2sO
+9Qkc7NH/AKOqxsvzMzL8kzMy11EHirRrixW8g1awms2ikuFuI7qNo2ijbbLJu3fdRj8zfw12e0Vz
+eq+BfDusTXEt/oGmX0tzJHLcPc2cchmaNSsbNuX5mVWZVz93ca8DE5HSrz54vlNo1XEZFqljLFYy
+peQyRX3/AB6yLIpW4+VpP3f975VZuP4VzV4jFZl18L/B9/dTXV14U0S6upnMk00+mws8jt95mbb8
+zfWqsnw0sLMj+xLzUPDB3YEWlSr9mC9Sq28qyQx5b5iyRq27PzfM27zqnDsnH93UL9ubx6UhIJrm
+JLzxH4eONUsW8QWzjzDf6JbCH7Ov8Qkt5Jmkb+8vleYzfMvlqVXzL1l4p0bVNLuNSsdYsLzTrfPn
+3cF1HJHFtXc25lO1dq/Ma+ar4CvhZcs4m8ZRkbdFZ+latY65YxXmn3cF/Zy7vLuLeRZI22tt+Vl4
+PNaFcbXIWFFFFQMKKKKACiiigAooooAKKKKa3AxvhZ/yK11/2GdV/wDTjcV11cj8LP8AkVrr/sM6
+r/6cbiuur9iofwYnlS+IX+H8K8/+Fn/JMPCH/YGs/wD0Slegfw/hXn/ws/5Jh4Q/7A1n/wCiUr5j
+iD+FA6KO51I6UtIOlLXwZ2hRRRQAUUUUAGKKKKYHLz+EYobuS90y8u9K1AyNMm27ma08xjuO618w
+RsG+bd8qs25mDK3zVND44vNFYv4qsrHQrBm2pqEGoNNbxt/dmZ4o/L3dFb5lZvlLKzKrdAMZp1e5
+hM2r4T3ebmiZSpxkRaJ4isfEVpJPZyyERv5Ukc0EkMkTYDbZIpFV1bDK3zL91lb7rCtomuF1LwTo
+2p38l81kbbUpiPN1HT5pLO6kXbt2tNCyyMvyr8rNt+Vf7q0iJ4h8MhRZXJ8RacvSx1B9t3Gv92O4
++7J8o2qs3zMzbnnr6nC55QrPlqe7L8DmlRZ31NIyawPDnizTPEolFjcmS5t9v2izmjaG5t933PMh
+dVkj3bSy7lXcPmHFdBmvo01Iw2FoozikzVCFooooAKKKKACiiigAooooAKKKKACiiigAooooAKKK
+KACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigA
+ooooAKKKKACiiigAxmiiigAooooAKKKKACiiigAooooAKTGaWigAxiiignFABXJ674A0HxLrFvqd
+/YedexQtbGRJpI/OgZtxhlVWUTR7l5jk3L1+X5jXVAkmnVNlIex5nb6Bqnw3tbRbK41PxRpG8pdx
+SxW7XNsPmZrlfLWNpju/1i/vJJGk3L8yssla1+J+mxeLo/DerpHo2ryJ5kcU+oWsgZmaPy4Ttk3L
+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
+LujjikX+7umVmP8AdX5rOheDtE8O3JvdP0q0tr6VSst4IEFzMM7m8yX70jMw3MzM25vmNcGJzqhR
+0p+8VGk5bj5PHg1w/Z/C0f8Aaxkyv9rbd2nw+jeZuXzv4vlh3fMu1mj+9VHTfD+sHxQuta5rcF/L
+b2j2dtb2Fh9lhjWSRWkZt0kjOzeXEPvKq7Pu/NXVkE0EYFfK4vN6+K5o/DE6I04xFooorwTYKKKK
+ACiiigAooopgFFFFABRRRSAKKKKACiiigAooooATGKWiigAooooAKKKKACiiigAooooAKKKKACii
+iqjuhGV8JP8Aklfg3/sC2X/ohK62uS+En/JK/Bv/AGBbL/0QldbX7PHZHlnJfFr/AJJV4y/7At7/
+AOiHrTPUVmfFr/klXjL/ALAt7/6IetM9RXxnEe9L5/oddDYUdKWkHSlr4k6gooooAKKKKACiiigA
+ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+iigAooooAKKKKACiiigAooooAKKKKYBRRRSAKKKKACiiigAooooAKKKKACiiimm0AUUUU7sQVn6p
+pdlrEKwX1pBexLu/dXEayD5laNvvf3lZl/3WYd60KKpScAsUNK0mx0Oyis9PtILC0i3eXb28axxr
+ubd8qrwOav0UUm3MLBjNFFFQMKoarpNjrljLZ6haQX9pLt8y3uI1kjba275lbg81forRScOorHLf
+8Ks8F/8AQn6D/wCCyH/4mj/hVngv/oT9B/8ABZD/APE11GaM1p7et/MKxy//AAqzwX/0J+g/+CyH
+/wCJo/4VZ4L/AOhP0H/wWQ//ABNdRmjNHt638wWOd03wD4Y0W+jvdO8OaVp95Hu8u5tbKOKRMrt+
+VlX+7RqXgHwxrV9Je6j4c0rULyTb5lzdWUcsj4Xb8zMv92ujopfWKvNzcw7HOaZ4B8L6LfR3uneH
+NK0+8j3eXc2tlHFImV2/Kyr/AHa6OjGKKiVSc/iCwUmKWisxhRRRQAUUUUAFFFFABSYpaKACiiig
+AooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAC
+iiigAoooqo7oRlfCT/klfg3/ALAtl/6ISutrkvhJ/wAkr8G/9gWy/wDRCV1tfs8dkeWcl8Wv+SVe
+Mv8AsC3v/oh60z1FZnxa/wCSVeMv+wLe/wDoh60z1FfGcR70vn+h10NhR0paQdKWviTqCiiigAoo
+ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiii
+gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA
+CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK
+KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoo
+ooAKKKKqO6EZXwk/5JX4N/7Atl/6ISutrkvhJ/ySvwb/ANgWy/8ARCV1tfs8dkeWcl8Wv+SVeMv+
+wLe/+iHrTPUVmfFr/klXjL/sC3v/AKIetM9RXxnEe9L5/oddDYUdKWkHSlr4k6gooooAKKKKACii
+igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
+oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
+iqjuhGV8JP8Aklfg3/sC2X/ohK62uS+En/JK/Bv/AGBbL/0QldbX7PHZHlnJfFr/AJJV4y/7At7/
+AOiHrTPUVmfFr/klXjL/ALAt7/6IetM9RXxnEe9L5/oddDYUdKWkHSlr4k6gooooAKKKKACiiigA
+ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+iigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKK
+KACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo
+AKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiiqj
+uhGV8JP+SV+Df+wLZf8AohK62uS+En/JK/Bv/YFsv/RCV1tfs8dkeWcV8Ujv8JLCSfKudR0+2lQf
+dkjkvYI5I2/vKysysv8AErNW4T81Y/xS/wCRVtf+wxpX/pxt62D96vheIv4lM66Pwi0UUV8gdQUU
+UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRR
+QAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFA
+BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAF
+FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUU
+UUAFFFFABXOePtTudE8CeItQspPIvLPTri5hk2q22RY2ZW2t/tV0dct8VP8AkmHi/wD7A95/6Jau
+nD+9ViJnXaNpdtoOk2emWcYgs7OFLeCIsW2xqoVV3H2UVp0g6UtfsK2PLOO+Kf8AyK1r/wBhjSv/
+AE429a/8VZHxT/5Fa1/7DGlf+nG3rX/ir4TiL+LTOuj8I6iiivkDqCiiigAooooAKKKKACiiigAo
+oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
+igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAaprl/in/AMkw
+8X/9ga8/9EvXUL1rl/in/wAkw8X/APYGvP8A0S9dFD+NET2PQR0paQdKWv2JbHlnHfFP/kVrX/sM
+aV/6cbetf+Ksj4p/8ita/wDYY0r/ANONvWv/ABV8JxF/FpnXR+EdRRmjNfIHUFFGaM0AFFGaM0AF
+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</Data>
+		    </Thumbnail>
+	  </Binary>
+</metadata>
