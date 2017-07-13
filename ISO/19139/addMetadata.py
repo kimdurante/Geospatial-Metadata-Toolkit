@@ -1,62 +1,61 @@
-#This script reads values from a csv and inserts them into the appropriate metadata fields.
-#in this example, a csv named 'identifiers.csv' contains 3 columns: filenames, unique ids ('identifiers'), and the title for each layer
-
 import csv
 import os
 import xml.etree.ElementTree as ET
-namespaces = {'gmd': 'http://www.isotc211.org/2005/gmd','gco': 'http://www.isotc211.org/2005/gco', 'gml': 'http://www.opengis.net/gml', 'gfc': 'http://www.isotc211.org/2005/gfc'}
+
 
 metadict = {}
-reader = csv.reader(open("shapefiles.csv", "rU"))
+reader = csv.reader(open("metadata.csv", "rU"))
 for rows in reader:
     filename = rows[0]
-    identifier = rows[1]
-    layerTitle = rows[2]
-    metadict[filename] = identifier, layerTitle
+    title = rows[1]
+    identifier = rows[2]
+    uuid = rows[3]
+    metadict[filename] = identifier, title
+
+originator = 'AUTHOR(S). '
+publisher = 'PUBLISHER'   
 
 def createMetadata():
     print f
     for k, v in metadict.items():
-        if v[1] == title.text:
+        if v[1] == title:
            metadataID.text = 'edu.stanford.purl:' + v[0]
            URL.text = 'http//purl.stanford.edu/' + v[0]
            distURL.text = 'http//purl.stanford.edu/' + v[0]
            distName.text = k
+           URI.text = 'http//purl.stanford.edu/' + v[0]
 
 def createCitation():
-    Originator = 'AUTHOR(S). '
-    Publisher = 'PUBLISHER'
-    Date = date.text
-    credit.text = Originator + '(' + Date[:4] + '). ' + title.text + '. ' + Publisher + '. Available at: ' + URL.text + '.'
+    credit.text = originator + '(' + pubDate + '). ' + title + '. ' + publisher + '. Available at: ' + URL.text + '.'
     print credit.text
 
-
+    
 for dirName, subDirs, fileNames in os.walk('.'):
     for f in fileNames:
-        if f.endswith('.xml'):
-            file = os.path.join(dirName, f)
+        if f.endswith("shp.xml"):
+            print f
+            file = os.path.join(dirName, f)  
             tree = ET.parse(file)
             root = tree.getroot()
-            ET.register_namespace('xsi', 'http://www.w3.org/2001/XMLSchema-instance')
-            ET.register_namespace('gmd', 'http://www.isotc211.org/2005/gmd')
-            ET.register_namespace('gco', 'http://www.isotc211.org/2005/gco')
-            ET.register_namespace('gts', 'http://www.isotc211.org/2005/gts')
-            ET.register_namespace('gss', 'http://www.isotc211.org/2005/gss')
-            ET.register_namespace('gsr', 'http://www.isotc211.org/2005/gsr')
-            ET.register_namespace('gfc', 'http://www.isotc211.org/2005/gfc')
-            ET.register_namespace('gmx', 'http://www.isotc211.org/2005/gmx')
-            ET.register_namespace('gmi', 'http://www.isotc211.org/2005/gmi')
-            ET.register_namespace('gml', 'http://www.opengis.net/gml')
-            title = root.find('gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:title/gco:CharacterString', namespaces=namespaces)
-            date = root.find('gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:date/gco:Date', namespaces=namespaces)
-            credit = root.find('gmd:identificationInfo/gmd:MD_DataIdentification/gmd:credit/gco:CharacterString', namespaces=namespaces)
-            metadataID = root.find('gmd:fileIdentifier/gco:CharacterString', namespaces=namespaces)
-            URL = root.find('gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:identifier/gmd:MD_Identifier/gmd:code/gco:CharacterString', namespaces=namespaces)
-            URI = root.find('gmd:dataSetURI/gco:CharacterString', namespaces=namespaces)
-            distURL = root.find('gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:linkage/gmd:URL', namespaces=namespaces)
-            distName = root.find('gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:name/gco:CharacterString',  namespaces=namespaces)
+            metadataID = root.find('mdFileID')
+            ResTitle = root.find('dataIdInfo/idCitation/resTitle').text
+            pubDate = root.find('dataIdInfo/idCitation/date/pubDate').text
+            pubDate = pubDate[:4]
+            distURL = root.find('distInfo/distTranOps/onLineSrc/linkage')
+            distName = root.find('distInfo/distTranOps/onLineSrc/orName')
+            URL = root.find('dataIdInfo/idCitation/citId/identCode')
+            fcID = root.find('contInfo/FetCatDesc/catCitation/citId/identCode')
+            URI = root.find('dataSetURI')
+            fcTitle = root.find ('contInfo/FetCatDesc/catCitation/resTitle')
+            credit = root.find('dataIdInfo/idCredit')
+            fcTitle.clear()
+            fcTitle.text = 'Feature catalog for ' + ResTitle
+            fcID.clear()
+            fcID.text = uuid
+            credit.clear()
             createMetadata()
             createCitation()
- #           tree.write(file)
-            
-                
+
+            print URL.text
+  #         tree.write(file)
+              
