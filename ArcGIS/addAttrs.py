@@ -2,9 +2,9 @@ import csv
 import os
 import xml.etree.ElementTree as ET
 
-if __name__=="__main__":
-    attrdict = {}
-    reader = csv.reader(open("attrs.csv", "rU"))
+attrdict = {}
+reader = csv.reader(open("attrs.csv", "rU"))
+for rows in reader:
     for rows in reader:
         label = rows[0]
         definition = rows[1]
@@ -30,6 +30,3 @@ for dirName, subDirs, fileNames in os.walk('.'):
                        i[6].text = v
                        print (label, i[6].text)
   #                     tree.write(file)
-
-
-                
