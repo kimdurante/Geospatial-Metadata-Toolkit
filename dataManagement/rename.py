@@ -2,9 +2,12 @@
 import os
 chars = ['&','-',' ','%','(',')','^']
 
+
 for dirName, subDirs, fileNames in os.walk('.'):
    for f in fileNames:
       f = os.path.join(dirName, f)
+      copy_f = f 
       for sc in chars:
-         if sc in f:
-            os.rename(f, f.replace(sc, '_'))
+         if sc in copy_f:
+            copy_f = copy_f.replace(sc, '_')
+      os.rename(f,copy_f)
