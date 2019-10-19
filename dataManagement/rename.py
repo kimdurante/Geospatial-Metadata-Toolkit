@@ -1,13 +1,18 @@
-#this script reads through a directory of files and replaces any value specified in 'chars' with an underscore '_'
-import os
+ import os 
+
+#invalid characters
 chars = ['&','-',' ','%','(',')','^']
 
+# Function to rename multiple files 
+def rename(f):
+    filePath = os.path.join(dirName, f)
+    for sc in chars:
+        if sc in f:
+            copy_f = filePath.replace(sc, '')
+            print (copy_f)
+            os.rename(filePath,copy_f)
 
+#search directory recursively
 for dirName, subDirs, fileNames in os.walk('.'):
-   for f in fileNames:
-      f = os.path.join(dirName, f)
-      copy_f = f 
-      for sc in chars:
-         if sc in copy_f:
-            copy_f = copy_f.replace(sc, '_')
-      os.rename(f,copy_f)
+    for f in fileNames:
+        rename(f)
