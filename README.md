@@ -2,59 +2,41 @@
 
 This toolkit contains templates, scripts, and other documentation for working with geospatial data and metadata
 
-### XSLT
+### addAttributes.py
 
-updateISO.xsl
+Script to write attribute definitions into ArcGISXML
 
-This XSL can be used for items that already have pre-existing metadata that need to be normalized. It also adds institutional level metadata, such as distributor information and thesauri citations. The example provided in the variables is from the National Atlas of the United States. The top-level variables can be replaced according to specific collection needs.
+### addMetadata.py
 
-### Python
+Script to write metadata into ArcGISXML from metadata.csv
 
-addISO.py
+### arc_sync_md.py
 
-This script adds identifiers to ISO 19139 metadata records, including metadata file identifier, citation URL, and distribution URL. A UUID for feature catalogs can also be added, if applicable.
+ArcPy script to synchronize metadata in ArcGIS
 
-addAttrs.py
+### checkData.py
 
-This script reads through a csv of attribute definitions and creates an ISO 19110 record using the FC_template.xml document.
+Script to read through a collection of data layers and create a csv containing filenames, spatial reference systems, and data types
 
-### XML Templates
+### metadata.csv
 
-SUL_template.xml 
+Template for cataloging geospatial data
 
-This is an ISO 19139 template for Stanford University. This template can be used for creating new metadata records.
+### rename.py
 
-FC_template.xml
+Script to rename files with invalid characters
 
-This is a very basic template for collecting ISO 19110 metadata for the description of feature catalogs. Each attribute must have a name (LABEL) and a definition element. If attribute definitions/codelists are provided in a .csv file, see addAttrs.py to automate creating of these metadata using this template.
+### shp2jpg.py
 
-### ISO and GeoBlacklight Metadata Elements
+Script to create thumbnail images for shapefiles
 
-| ISO Element       | GeoBlacklight  | Entry Method  |
-| ------------- |:-------------:| -----:|
-| Title      | dc_title_s | Free text |
-| ResponsibleParty (CI_RoleCode='originator') |dc_creator_sm| Controlled vocabulary |
-| Date | dct_issued_s     | Date w3cdtf |
-| Responsible Party (CI_RoleCode =’publisher’) *| dc_publisher_sm*   | Controlled vocabulary |
-| Abstract | dc_description | Free text |
-| Dataset Identifier | uuid | URI |
-| ISO Topic Category | dc_subject_sm | ISO Codelist |
-| Theme keyword(s) | dc_subject_sm | Controlled vocabulary |
-| Place keyword(s) | dc_spatial_sm | Controlled vocabulary |
-| Temporal extent | dc_temporal_sm/solr_year_i | Date(s) w3cdtf |
-| Geographic extent | georss_box_s | W,E,N,S decimal degrees |
-| Access/Use Constraints | dc_rights_s | ISO Codelist |
-| Distributor | dct_provenance_s | Contact template |
-| Metadata date stamp | layer_modified_dt | Date w3cdtf |
-| Distribution format | dc_format_s | Controlled vocabulary (local) |
-| Language | dc_language_sm | ISO Codelist |
-| Aggregate Dataset Name* |dc_isPartOf_sm*  | Free text |
-| Hierarchy level | dc_type_s | ISO Codelist |
-| Metadata file identifier | dct_references | Text (uuid or namespace authority + identifier |
-| Spatial reference |  | EPSG Code |
-| Metadata contact |  | Contact template |
+### template.xml
 
-* indicates Optional field
+ArcGIS template for creating new metadata records.
+
+### tiff2jpg.py
+
+Script to create thumbnail images for GeoTIFFs
 
 
 
