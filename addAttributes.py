@@ -3,7 +3,7 @@ import os
 import xml.etree.ElementTree as ET
 
 attrdict = {}
-reader = csv.reader(open("attrs.csv", "rU"))
+reader = csv.reader(open("attributes.csv", "rU"))
 for rows in reader:
     for rows in reader:
         label = rows[0]
