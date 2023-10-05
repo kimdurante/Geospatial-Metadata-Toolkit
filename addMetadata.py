@@ -19,7 +19,7 @@ reader = csv.reader(open('metadata.csv', 'r'))
 next(reader)
 
 for rows in reader:
-    metadict[rows[0]] = rows[2], rows[3], rows[4], rows[5].split('|'), rows[6].split('|'), rows[7].split('|'), rows[8], rows[9].split('|'), rows[10].split('|'), rows[11].split('|'), rows[12], rows[13], rows[14], rows[15].split('|'), rows[16], rows[17], rows[18], rows[19], rows[20], rows[21], rows[22], rows[23], rows[24]
+    metadict[rows[0]] = rows[2], rows[3], rows[4], rows[5].split('|'), rows[6].split('|'), rows[7].split('|'), rows[8], rows[9], rows[10].split('|'), rows[11].split('|'), rows[12].split('|'), rows[13].split('|'), rows[14], rows[15], rows[16].split('|'), rows[17], rows[18], rows[19], rows[20], rows[21], rows[22], rows[23], rows[24], rows[25], rows[26]
 
 def applyTemplate():
     tree = ET.parse(template)
@@ -31,14 +31,15 @@ def applyTemplate():
 def addMetadata():
     for k, v in metadict.items():
         if k + '.xml' == f:
+            print (tempPeriod.text)
             distName.text = k
             URL.text = 'https://purl.stanford.edu/' + v[0]
             dataSetURI.text = 'https://purl.stanford.edu/' + v[0]
+            distURL.text = 'https://purl.stanford.edu/' + v[0]
+            metadataId.text = 'edu.stanford.purl:' + v[0]
             resTitle.clear()
             resTitle.text = v[1]
             abstract.text = v[2]
-            metadataId.text = 'edu.stanford.purl:' + v[0]
-            tempExtent.text = v[10] + 'T00:00:00'
             if v[3] == '':
                 orig.remove(originatorInd)
             else:
@@ -47,73 +48,103 @@ def addMetadata():
                 orig.remove(originatorOrg)
             else:
                 originatorOrg.text = v[4][0]
-            if v[3] == '' and v[4] == '':
+            if (v[3][0] == '') and (v[4][0] == ''):
                 idCitation.remove(orig)
             publisher.text = v[5][0]
-            pubDate.text = v[6] + 'T00:00:00'
+            publicationDate = datetime.strptime(v[6], '%m/%d/%y')
+            publicationDate = datetime.strftime(publicationDate,'%Y-%m-%dT%H:%M:%S')
+            pubDate.text = publicationDate
+            if v[7] == '':
+                idCitation.remove(edition)
+            else:
+                edition.text = v[7]
+            for isotopic, isocode in isotopics.items():
+                 if v[8][0] == isotopic:
+                     topicCategory[0].set('value', isocode)
+                 for index, tpCat in enumerate(v[8][0:]):
+                     newElem = ET.Element('tpCat') 
+                     if index > 0:
+                         if tpCat == isotopic:
+                             tpCatIndex = list(dataIdInfo).index(topicCategory)
+                             dataIdInfo.insert(tpCatIndex +1, newElem)
+                             newIsoCat = ET.SubElement(newElem, 'TopicCatCd')
+                             newIsoCat.set('value', isocode)
+            themeKey.text = v[9][0]
+            placeKey.text = v[10][0]
+            for index, theme in enumerate(v[9][0:]):
+                if index > 0:
+                    themeKeys.insert(index, ET.Element('keyword'))
+                    themeKeys[index].text = theme
+            for index, place in enumerate(v[10][0:]):
+                if index > 0:
+                    placeKeys.insert(index, ET.Element('keyword'))
+                    placeKeys[index].text = place
+                   
+            if v[11][0] == '':
+                tempInstant.text = publicationDate
+                dataExt.remove(dataExt[2])
+                exDesc.text = 'publication date'
+            else:    
+                try:
+                    (v[11][1])
+                    temporalBeg = datetime.strptime(v[11][0], '%m/%d/%Y')
+                    temporalBeg = datetime.strftime(temporalBeg,'%Y-%m-%dT%H:%M:%S')
+                    temporalEnd = datetime.strptime(v[11][1], '%m/%d/%Y')
+                    temporalEnd = datetime.strftime(temporalEnd,'%Y-%m-%dT%H:%M:%S')
+                    tempPeriod[0].text = temporalBeg
+                    tempPeriod[1].text = temporalEnd
+                    dataExt.remove(dataExt[1])
+                    print (tempPeriod[0].text, tempPeriod[1].text)
+                except IndexError: 
+                    temporalInst = datetime.strptime(v[11][0], '%m/%d/%y')
+                    temporalInst = datetime.strftime(temporalInst,'%Y-%m-%dT%H:%M:%S')
+                    tempInstant.text = temporalInst
+                    print (tempInstant.text)
+                    dataExt.remove(dataExt[2])
 
             for freq, freqcode in frequencies.items():
-                if v[11] == freq:
+                if v[12] == freq:
                     updateFreq.set('value', freqcode)
 
-            fileFormat.text = v[12]
-            language[0].set('value', v[13][0])
-            for index, lang in enumerate(v[13][0:]):
+            fileFormat.text = v[13]
+            language[0].set('value', v[14][0])
+            for index, lang in enumerate(v[14][0:]):
                 if index > 0:
                     language.insert(index, ET.Element('dataLang'))
                     newLang = ET.SubElement(language, 'languageCode')
                     newLang.set('value', lang)
 
-            if v[14] == '':
+            if v[15] == '':
                 contInfo.remove(featureCatalog)
             else:
-                fcId.text = v[14]
+                fcId.text = v[15]
 
-            distURL.text = 'https://purl.stanford.edu/' + v[0]
-            collectionTitle.text = v[15]
-            aggrDSTitle.text = v[15]
-            aggrDSId.text = 'https://purl.stanford.edu/' + v[16]
-            parentMetadataId.text = 'https://purl.stanford.edu/' + v[16] + '.mods'
-            if v[17] == 'public':
+            collectionTitle.text = v[16]
+            aggrDSTitle.text = v[16]
+            aggrDSId.text = 'https://purl.stanford.edu/' + v[17]
+            parentMetadataId.text = 'https://purl.stanford.edu/' + v[17] + '.mods'
+            if v[18] == 'public':
                 accessConsts.remove(access)
-            else:
-                pass
-            usage.text = v[18]
-            themeKey.text = v[8][0]
-            placeKey.text = v[9][0]
-            for index, theme in enumerate(v[8][0:]):
-                if index > 0:
-                    themeKeys.insert(index, ET.Element('keyword'))
-                    themeKeys[index].text = theme
-            for index, place in enumerate(v[9][0:]):
-                if index > 0:
-                    placeKeys.insert(index, ET.Element('keyword'))
-                    placeKeys[index].text = place
-            for isotopic, isocode in isotopics.items():
-                if v[7][0] == isotopic:
-                    topicCategory[0].set('value', isocode)
-                for index, tpCat in enumerate(v[7][0:]):
-                    if index > 0:
-                        if tpCat == isotopic:
-                            tpCatIndex = list(dataIdInfo).index(topicCategory)
-                            topicCategory.insert(tpCatIndex +1, ET.Element('tpCat'))
-                            newIsoCat = ET.SubElement(topicCategory, 'topicCatCd')
-                            newIsoCat.set('value', isocode)
-                            #dataIdInfo.insert(tpCatIndex+1, newIsoCat)
-            if v[19] == '':
+            usage.text = v[19]
+
+            if v[20] == '':
                 pointOfContact.remove(contactInd)
             else:
-                contactInd.text = v[19]
-            if v[20] == '':
+                contactInd.text = v[20]
+            if v[21] == '':
                 pointOfContact.remove(contactOrg)
             else:
-                contactOrg.text = v[20]
-            if v[21] == '':
+                contactOrg.text = v[21]
+            if v[22] == '':
                 pointOfContact.remove(contactEmail)
             else:
-                contactEmail.text = v[21]
-            if v[19] == '' and v[20] == '':
+                contactEmail.text = v[22]
+            if v[20] == '' and v[21] == '':
                 dataIdInfo.remove(pointOfContact)
+            dataSourceTitle.text = v[23]
+            dataSourceId.text = v[24]
+            if (v[23] == ''):
+                sourceCitation.remove(sourceCitation[0])
                 
             
                         
@@ -128,7 +159,7 @@ for dirName, subDirs, fileNames in os.walk('.'):
 #Find elements and insert metadata values.
         if f.endswith(".shp.xml"):
             filePath = os.path.join(dirName, f)
-            print (type(filePath))
+            print (f)
             tree = ET.parse(filePath)
             root = tree.getroot()
             dataIdInfo = root.find('dataIdInfo')
@@ -143,9 +174,13 @@ for dirName, subDirs, fileNames in os.walk('.'):
             themeKey = root.find('dataIdInfo/themeKeys/keyword')
             topicCategory = root.find('dataIdInfo/tpCat')
             pubDate = root.find('dataIdInfo/idCitation/date/pubDate')
+            edition = root.find('dataIdInfo/idCitation/resEd')
             contactName = root.find('dataIdInfo/idPoC/rpOrgName')
             address = root.find('dataIdInfo/idPoC/rpCntInfo/cntAddress/eMailAdd')
-            tempExtent = root.find('dataIdInfo/dataExt/tempEle/TempExtent/exTemp/TM_Instant/tmPosition')
+            dataExt = root.find('dataIdInfo/dataExt')
+            tempInstant = root.find('dataIdInfo/dataExt/tempEle/TempExtent/exTemp/TM_Instant/tmPosition')
+            tempPeriod = root.find('dataIdInfo/dataExt/tempEle/TempExtent/exTemp/TM_Period')
+            exDesc = root.find('dataIdInfo/dataExt/exDesc')
             fileFormat = root.find('distInfo/distFormat/formatName')
             distURL = root.find('distInfo/distTranOps/onLineSrc/linkage')
             distName = root.find('distInfo/distTranOps/onLineSrc/orName')
@@ -173,5 +208,8 @@ for dirName, subDirs, fileNames in os.walk('.'):
             accessConsts = root.find('dataIdInfo/resConst/LegConsts/accessConsts')
             access = root.find('dataIdInfo/resConst/LegConsts/accessConsts/RestrictCd')
             usage = root.find('dataIdInfo/resConst/LegConsts/othConsts')
+            sourceCitation = root.find('dqInfo/dataLineage')
+            dataSourceTitle = root.find('dqInfo/dataLineage/dataSource/srcCitatn/resTitle')
+            dataSourceId = root.find('dqInfo/dataLineage/dataSource/srcCitatn/citId/identCode')
             addMetadata()
             tree.write(filePath)       
