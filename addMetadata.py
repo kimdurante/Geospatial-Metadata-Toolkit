@@ -157,7 +157,7 @@ for dirName, subDirs, fileNames in os.walk('.'):
             applyTemplate()
 
 #Find elements and insert metadata values.
-        if f.endswith(".shp.xml"):
+        if f.endswith('.shp.xml') or f.endswith('tif.xml':
             filePath = os.path.join(dirName, f)
             print (f)
             tree = ET.parse(filePath)
