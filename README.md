@@ -18,6 +18,14 @@ ArcPy script to synchronize metadata in ArcGIS
 
 Script to read through a collection of data layers and create a csv containing filenames, spatial reference systems, and data types
 
+### creaateThumbnail.py
+
+Script to create thumbnail images for Shapefiles and GeoTIFFs
+
+### creaateFolders.py
+
+Script to create folders for staging data before accessioning
+
 ### metadata.csv
 
 Template for cataloging geospatial data
@@ -26,17 +34,10 @@ Template for cataloging geospatial data
 
 Script to rename files with invalid characters
 
-### shp2jpg.py
-
-Script to create thumbnail images for shapefiles
 
 ### template.xml
 
 ArcGIS template for creating new metadata records.
-
-### tiff2jpg.py
-
-Script to create thumbnail images for GeoTIFFs
 
 
 
