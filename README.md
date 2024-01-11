@@ -22,7 +22,7 @@ Script to read through a collection of data layers and create a csv containing f
 
 Script to create thumbnail images for Shapefiles and GeoTIFFs
 
-### creaateFolders.py
+### createFolders.py
 
 Script to create folders for staging data before accessioning
 
