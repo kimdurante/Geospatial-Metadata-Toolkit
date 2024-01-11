@@ -18,7 +18,7 @@ ArcPy script to synchronize metadata in ArcGIS
 
 Script to read through a collection of data layers and create a csv containing filenames, spatial reference systems, and data types
 
-### creaateThumbnail.py
+### createThumbnail.py
 
 Script to create thumbnail images for Shapefiles and GeoTIFFs
 
