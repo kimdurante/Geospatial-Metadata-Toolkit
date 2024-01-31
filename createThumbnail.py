@@ -7,39 +7,41 @@ from shapely.geometry import Point, Polygon
 from PIL import Image as Image
 import base64
 
+Image.MAX_IMAGE_PIXELS = None
 
 for dirName, subDirs, fileNames in os.walk('.'):
     for f in fileNames:
-        if f.endswith('.shp'):
+        if f.endswith('.shp') or f.endswith('geojson'):
+            print (f)
+            fName = len(f)
             filePath = os.path.join(dirName, f)
-            print (f[:-4])
             metadata = os.path.join(dirName, f + '.xml')
             tree = ET.parse(metadata)
             root = tree.getroot()
             thumbnail = root.find('Binary/Thumbnail/Data')
-            shapefile = geopandas.read_file(filePath)
-            shapefile.plot()
-            plot = shapefile.plot()
+            vector = geopandas.read_file(filePath)
+            vector.plot()
+            plot = vector.plot()
             plot.set_axis_off()
             fig = plot.get_figure()
-            fig.savefig(filePath[:-4] + '.jpg')
-            outputfile = os.path.join(dirName, f[:-4] + '.jpg')
+            fig.savefig(filePath[:-fName] + 'preview.jpg')
+            outputfile = filePath[:-fName] + 'preview.jpg'
             with open(outputfile, "rb") as image:
                 b64string = base64.b64encode(image.read())
                 thumbnail.text = str(b64string)[2:]
                 tree.write(metadata)
-                os.remove(outputfile)
         elif f.endswith('.tif'):
             print (f)
+            fName = len(f)
             filePath = os.path.join(dirName, f)
             metadata = os.path.join(dirName, f + '.xml')
             tree = ET.parse(metadata)
             root = tree.getroot()
             thumbnail = root.find('Binary/Thumbnail/Data')
-            outputfile = filePath[:-4] + '.jpg'
+            outputfile = filePath[:-fName] + 'preview.jpg'
             im = Image.open(filePath)
-            if im.mode in ("RGBA", "P"):
-                im = im.convert("RGB")
+            if im.mode in ('RGBA', 'P') or im.mode in ('RGBX', 'P'):
+                im = im.convert('RGB')
                 datas = im.getdata()
                 new_image_data = []
                 for item in datas:
@@ -48,11 +50,10 @@ for dirName, subDirs, fileNames in os.walk('.'):
                     else:
                         new_image_data.append(item)       
                 im.putdata(new_image_data)
-                im.thumbnail((128, 128), Image.ANTIALIAS)
-            im.save(outputfile, "JPEG")
-            with open(outputfile, "rb") as image:
+                im.thumbnail((128, 128), Image.LANCZOS)
+            im.save(outputfile, 'JPEG')
+            with open(outputfile, 'rb') as image:
                 b64string = base64.b64encode(image.read())
                 thumbnail.clear()
                 thumbnail.text = str(b64string)[2:]
                 tree.write(metadata)
-                os.remove(outputfile)
