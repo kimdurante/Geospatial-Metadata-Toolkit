@@ -54,6 +54,5 @@ for dirName, subDirs, fileNames in os.walk('.'):
             im.save(outputfile, 'JPEG')
             with open(outputfile, 'rb') as image:
                 b64string = base64.b64encode(image.read())
-                thumbnail.clear()
                 thumbnail.text = str(b64string)[2:]
                 tree.write(metadata)
