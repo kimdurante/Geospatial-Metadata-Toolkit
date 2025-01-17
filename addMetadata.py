@@ -152,12 +152,12 @@ def addMetadata():
 #Walk through the directory and find shapefiles, create an XML document.
 for dirName, subDirs, fileNames in os.walk('.'):
     for f in fileNames:
-        if f.endswith('.shp'):
+        if f.endswith('.shp') or f.endswith('.tif'):
             filePath = os.path.join(dirName, f)
             applyTemplate()
 
 #Find elements and insert metadata values.
-        if f.endswith('.shp.xml') or f.endswith('tif.xml':
+        if f.endswith('.shp.xml') or f.endswith('tif.xml'):
             filePath = os.path.join(dirName, f)
             print (f)
             tree = ET.parse(filePath)
